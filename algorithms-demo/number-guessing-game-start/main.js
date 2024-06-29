@@ -65,3 +65,4 @@ function setWeather() {
     para.textContent = "";
   }
 }
+

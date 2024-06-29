@@ -44,7 +44,7 @@
       <p class="lastResult"></p>
       <p class="lowOrHi"></p>
     </div>
-    
+
 <label for="weather">Select the weather type today: </label>
 <select id="weather">
   <option value="">--Make a choice--</option>
@@ -55,6 +55,13 @@
 </select>
 
 <p></p>
+<label for="theme">Select theme: </label>
+<select id="theme">
+  <option value="white">White</option>
+  <option value="black">Black</option>
+</select>
+
+<h1>This is my website</h1>
 
     <script>
 
@@ -132,7 +139,21 @@
         randomNumber = Math.floor(Math.random() * 100) + 1;
       }
       
-
+      const select = document.querySelector("select");
+      const html = document.querySelector("html");
+      document.body.style.padding = "10px";
+      
+      function update(bgColor, textColor) {
+        html.style.backgroundColor = bgColor;
+        html.style.color = textColor;
+      }
+      
+      select.addEventListener("change", () =>
+        select.value === "black"
+          ? update("black", "white")
+          : update("white", "black"),
+      );
+      
     </script>
   </body>
 </html>
