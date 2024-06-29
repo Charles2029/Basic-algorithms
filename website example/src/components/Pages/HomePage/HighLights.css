@@ -1,0 +1,30 @@
+.highlights {
+    grid-template-rows: auto auto;
+}
+.highlights-head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.highlights-btn{
+    background: var(--greyColor);
+    color: var(--primaryColor);
+    font-family: var(--karla);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 16px;
+    width: 180px;
+    height: 50px;
+    transition: .2s ease;
+  }
+  .highlights-btn:hover{
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: .2s ease;
+  }

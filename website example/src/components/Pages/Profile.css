@@ -1,0 +1,69 @@
+.profile-action-box {
+    background: var(--greyColor);
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.profile-action {
+    width: 100%;
+    height: 80px;
+    border-radius: 16px 16px 0 0 ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-action-btn-active{
+    border: none;
+    background: transparent;
+    color: var(--primaryColor);
+    font-family: var(--karla);
+    font-weight: bold;
+    font-size: 15pt;
+    transition: .2s ease;
+}
+.profile-action-btn{
+    background:var(--primaryColor);
+    color: white;
+    border: none;
+    font-family: var(--karla);
+    font-weight: bold;
+    font-size: 15pt;
+    transition: .2s ease;
+}
+.profile-action-btn:hover{
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: .2s ease;
+}
+
+/* for action btn borders */
+.profile-action-btn-cart{
+    border-radius: 16px 0 0 0;
+}
+.profile-action-btn-cart-orders{
+    border-radius: 16px 0 16px 0;
+}
+.profile-action-btn-cart-reservations{
+    border-radius: 16px 0 0 0;
+}
+
+.profile-action-btn-orders{
+    border-radius: 16px 0 0 0;
+}
+.profile-action-btn-orders-cart{
+    border-radius: 0 0 0 16px ;
+}
+.profile-action-btn-orders-reservations{
+    border-radius: 0 0 16px 0;
+}
+
+.profile-action-btn-reservations{
+    border-radius: 16px 0 0 0;
+}
+.profile-action-btn-reservations-cart{
+    border-radius: 0 16px 0 0;
+}
+.profile-action-btn-reservations-orders{
+    border-radius: 0 16px 0 16px;
+}
+/* end */

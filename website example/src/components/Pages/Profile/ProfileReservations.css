@@ -1,0 +1,25 @@
+.profile_reservation_card_parts{
+  padding: 20px;
+  width: 100%;
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.profile_reservation_text_box{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.profile_reservation_text{
+  font-family: var(--karla);
+  color: var(--primaryColor);
+  font-size: 20px;
+  font-weight: 500;
+}
+.profile_reservation_sub_text{
+  font-family: var(--karla);
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-weight: 400;
+}

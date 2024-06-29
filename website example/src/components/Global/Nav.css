@@ -1,0 +1,101 @@
+.active {
+    background: var(--greyColor);
+}
+
+.header-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    font-family: var(--karla);
+    color: var(--primaryColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .2s ease;
+}
+.nav-item:hover {
+    color: white;
+    background: var(--secondaryColor);
+    transition: .2s ease;
+}
+
+/* disabled */
+.navHamburg {
+    display: none;
+}
+
+.hamburgerNav {
+    display: none;
+}
+
+/* media Query */
+@media screen and (max-width: 780px) {
+    .header-nav {
+        display: none;
+    }
+
+    .navHamburg {
+        display: block;
+        color: var(--primaryColor);
+        font-size: 42px;
+        padding: 0 20px 0 20px;
+        transition: .2s ease;
+    }
+    .nav-hamburg-close{
+        padding: 10px;
+        font-size: 32px;
+        color: var(--primaryColor);
+    }
+    .nav-hamburg-icon:hover {
+        color: var(--secondaryColor);
+        transition: .2s ease;
+    }
+    
+    .hamburger-nav {
+        position: absolute;
+        background: white;
+        top: 0;
+        right: 0;
+        height: 500px;
+        width: 200px;
+        border-radius: 0 0 0 32px;
+        display: grid;
+        grid-template-rows: 40px auto;
+        align-items: center;
+    }
+
+    .nav-menu{
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+    .login-ham-nav{
+        border-radius: 0 0 0 32px;
+    }
+}
